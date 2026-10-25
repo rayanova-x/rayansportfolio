@@ -1,7 +1,7 @@
 {
   "openTo": "",
   "headline": {
-    "lead": "Full-stack engineer building",
+    "lead": "AI engineer building",
     "emphasis": "AI retrieval and agent systems",
     "tail": "that hold up in production."
   },
@@ -33,7 +33,7 @@
     "eyebrow": "About",
     "title": "Hi there!",
     "portraitPending": "Portrait goes here",
-    "portraitAlt": "Aahil Khan"
+    "portraitAlt": "Mohamed Rayan"
   },
   "portraitEgg": {
     "taps": 10,
@@ -47,7 +47,7 @@
       "aalu"
     ],
     "caption": "sher bacha",
-    "hiddenAlt": "Aahil Khan, off duty",
+    "hiddenAlt": "Mohamed Rayan, off duty",
     "flipBack": "Flip back"
   },
   "skills": {

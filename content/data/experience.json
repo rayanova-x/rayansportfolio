@@ -1,130 +1,52 @@
 {
   "jobs": [
     {
-      "slug": "samsung-prism",
-      "role": "Research Intern",
-      "company": "Samsung PRISM",
-      "period": "Jul 2026 – present",
-      "year": 2026,
-      "meta": "Samsung PRISM · Remote · Jul 2026 – present",
-      "lede": "Teaching multilingual SpeechLLMs to cope with accents they were never really trained on.",
-      "highlights": [
-        "Work-let: **accent-invariant representation learning** for SpeechLLMs, mentored by Dr. Spandan Dey and Hirak Mondal.",
-        "Reproducing and benchmarking baseline multilingual pipelines: **SALM, Qwen-Audio, SALMONN**, then running accent failure analysis to find which accents actually break, and why.",
-        "Building parameter-efficient adaptation using **LoRA adapters**, accent-aware front-end encoders and MoE dynamic adapter routing to improve ASR/AST on accented and low-resource speech, without retraining the whole model.",
-        "Closure deliverable is a **peer-reviewed publication**, so the bar here is a paper rather than a demo."
-      ],
-      "stack": [
-        "Python"
-      ]
-    },
-    {
-      "slug": "zariya",
-      "role": "Full Stack AI Intern",
-      "company": "Oddmind Innovations",
-      "period": "Apr 2026 – present",
-      "year": 2026,
-      "meta": "Oddmind Innovations · Bangalore, remote · Apr 2026 – present",
-      "lede": "Building an AI interview platform end to end — frontend, backend and the realtime layer.",
-      "highlights": [
-        "Shipping across the frontend, backend and **LiveKit** service: custom interviews, realtime sessions and recruiter workflows.",
-        "Built audio interview **evaluation pipelines** on AWS S3 and the Gemini Files API, storing structured scores, recording metadata and recruiter-facing report data.",
-        "Added **versioned prompt templates** with centralised resolution logic, so changing a prompt stops being a find-and-replace across the codebase.",
-        "Recruiter pipeline tooling with server-side filtering and candidate workflow management."
-      ],
-      "stack": [
-        "Next.js",
-        "React",
-        "TypeScript",
-        "Node.js",
-        "Prisma",
-        "S3"
-      ],
-      "images": [
-        "/work/zariya-1.webp",
-        "/work/zariya-2.webp"
-      ]
-    },
-    {
-      "slug": "datesheet",
-      "role": "Backend Engineer",
-      "company": "Datesheet Generator",
-      "period": "Mar – Jul 2025",
-      "year": 2025,
-      "meta": "Datesheet Generator · Thapar University · Mar – Jul 2025",
-      "lede": "Re-architected an exam scheduling system that couldn't survive a page refresh.",
-      "highlights": [
-        "Moved from **session-based state to a persistent MySQL-backed workflow** — the core fix.",
-        "Secure authentication, multi-user support and **savepoints**, so partial work resumes instead of starting over.",
-        "Improved the generation workflow, cutting scheduling errors by **40%**.",
-        "Integrated with **Oracle PeopleSoft** to automate structured data ingestion and export between the legacy system and the new one."
-      ],
-      "stack": [
-        "MySQL",
-        "Python"
-      ]
-    },
-    {
-      "slug": "edutube",
-      "role": "Team Lead / Full-stack",
-      "company": "Thapar EduTube",
-      "period": "Oct 2024 – Jan 2025",
+      "slug": "tcs",
+      "role": "AI Engineer",
+      "company": "Tata Consultancy Services",
+      "period": "08/2024 – Present",
       "year": 2024,
-      "meta": "Thapar EduTube · Patiala · Oct 2024 – Jan 2025",
-      "lede": "Led 3 engineers building a lecture archival platform for **15,000+** students.",
+      "meta": "Tata Consultancy Services · Chennai, India · 08/2024 – Present",
+      "lede": "Delivering production-grade enterprise AI solutions across GCP and AWS for supply chain document automation, multi-agent insurance claims, enterprise IT support, and apparel commerce.",
       "highlights": [
-        "Backend APIs and dashboards for lecture uploads, metadata management, access control and search.",
-        "Built a **CLI sync tool** for local lecture management with automated YouTube uploads and diff-based updates, which took a large bite out of upload times.",
-        "Evaluated Elasticsearch against **PostgreSQL full-text search** and migrated the search infrastructure — less operational complexity, same performance.",
-        "Used **k6 load testing** and deployment tuning to hold up under concurrent traffic on college-hosted Linux servers."
+        "Deployed a serverless GCP-based document processing pipeline to automate vendor packing slip extraction and JDE ERP integration across 20+ suppliers, projecting savings of 2,800-3,700 manual hours per distribution center annually.",
+        "Boosted extraction accuracy from 75% to 95% by transitioning to a generative AI schema framework, achieving 80% end-to-end automation across non-standard supplier templates.",
+        "Architected a LangGraph-based multi-agent insurance claims pipeline with interrupt checkpoints for human review of high-risk claims, backed by deterministic guardrails, PII masking and audit logs.",
+        "Engineered an automated CI test suite and custom evaluation engine combining full branch-coverage graph checks, hand-calibrated LLM-as-a-judge scoring, and trajectory path-conformance checks.",
+        "Developed an enterprise IT ticket triage RAG assistant for support staff, enforcing server-side pre-retrieval access control for internal SOPs and confidence-gated fallback synthesis.",
+        "Designed a hybrid BM25 + dense search and cross-encoder reranking engine, achieving 95% Recall@5 and 0.81 NDCG@5, validated via prompt-injection testing, dual-layer citation checks, and LLM-as-a-judge evals.",
+        "Led a 5-member team, delivering a Bedrock-powered Virtual Try-On feature across 21 apparel categories in a Dynamic Yield environment on AWS, driving shopper engagement with projected 2-5% conversion uplift and 10% return-rate reduction."
       ],
       "stack": [
-        "Node.js",
-        "Express.js",
-        "PostgreSQL",
-        "Redis",
+        "Python",
+        "AWS",
+        "Google Cloud Platform",
+        "LangGraph",
+        "FastAPI",
         "Docker",
-        "AWS"
-      ],
-      "images": [
-        "/work/edutube-1.webp",
-        "/work/edutube-2.webp",
-        "/work/edutube-3.webp"
+        "PyTorch"
       ]
     }
   ],
   "education": [
     {
-      "institution": "Thapar Institute of Engineering & Technology",
-      "degree": "B.E. Computer Engineering",
-      "detail": "CGPA 9.16 · Aug 2023 – present"
-    },
-    {
-      "institution": "Indian Institute of Technology Madras",
-      "degree": "Diploma in Programming",
-      "detail": "CGPA 8.34 · Sept 2023 – Sept 2025"
+      "institution": "Vellore Institute of Technology",
+      "degree": "B.Tech in Computer Science and Engineering",
+      "detail": "2020 – 2024 | Vellore, India"
     }
   ],
   "awards": [
     {
-      "title": "Winner",
-      "event": "Economic Times 2.0 Hackathon"
+      "title": "Claude Certified Architect - Professional",
+      "event": "Anthropic (2026)"
     },
     {
-      "title": "Most Useful Real World Workflow Award",
-      "event": "Micro1 Frontier Engineering Challenge"
+      "title": "Claude Certified Architect - Foundations",
+      "event": "Anthropic (2026)"
     },
     {
-      "title": "Winner",
-      "event": "Samsung PRISM Web Agent Hackathon"
-    },
-    {
-      "title": "Winner",
-      "event": "NioHack 2026"
-    },
-    {
-      "title": "Innovation Award",
-      "event": "Agentic AI Hackathon, Ulster University (UK)"
+      "title": "Claude Certified Developer - Foundations",
+      "event": "Anthropic (2026)"
     }
   ]
 }

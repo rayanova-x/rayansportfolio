@@ -1,127 +1,50 @@
 [
   {
-    "label": "Languages",
+    "label": "Generative AI",
     "tools": [
-      {
-        "name": "Python",
-        "logo": "/logos/python-original.svg"
-      },
-      {
-        "name": "TypeScript",
-        "logo": "/logos/Typescript.svg"
-      },
-      {
-        "name": "JavaScript",
-        "logo": "/logos/javascript-original.svg"
-      }
+      { "name": "LLMs" },
+      { "name": "RAG pipelines" },
+      { "name": "Agentic Workflows" },
+      { "name": "MCP" },
+      { "name": "Prompt Engineering" },
+      { "name": "NLP" },
+      { "name": "Machine Learning" },
+      { "name": "Vector Databases" }
     ]
   },
   {
-    "label": "Frameworks",
+    "label": "Frameworks & Tools",
     "tools": [
-      {
-        "name": "React",
-        "logo": "/logos/react-original.svg"
-      },
-      {
-        "name": "Next.js",
-        "logo": "/logos/nextjs-original.svg"
-      },
-      {
-        "name": "Node.js",
-        "logo": "/logos/nodejs-original.svg"
-      },
-      {
-        "name": "Express.js",
-        "logo": "/logos/express-original.svg"
-      },
-      {
-        "name": "FastAPI",
-        "logo": "/logos/FastAPI.svg"
-      }
+      { "name": "PyTorch" },
+      { "name": "LangChain", "logo": "/logos/langchain.png" },
+      { "name": "LangGraph" },
+      { "name": "LangSmith" },
+      { "name": "OpenTelemetry" },
+      { "name": "Copilot Studio" },
+      { "name": "Claude Code" }
     ]
   },
   {
-    "label": "Databases",
+    "label": "Backend",
     "tools": [
-      {
-        "name": "PostgreSQL",
-        "logo": "/logos/postgresql-original.svg"
-      },
-      {
-        "name": "MySQL",
-        "logo": "/logos/mysql-original.svg"
-      },
-      {
-        "name": "Redis",
-        "logo": "/logos/redis-original.svg"
-      },
-      {
-        "name": "DynamoDB",
-        "logo": "/logos/amazonwebservices-original-wordmark.svg"
-      },
-      {
-        "name": "Prisma",
-        "logo": "/logos/prisma-original.svg"
-      }
+      { "name": "Python", "logo": "/logos/python-original.svg" },
+      { "name": "FastAPI", "logo": "/logos/FastAPI.svg" },
+      { "name": "Flask", "logo": "/logos/flask-original.svg" },
+      { "name": "REST APIs", "logo": "/logos/rest.png" },
+      { "name": "SQL" },
+      { "name": "MongoDB" },
+      { "name": "FAISS" },
+      { "name": "ChromaDB" },
+      { "name": "Qdrant", "logo": "/logos/qdrant.png" }
     ]
   },
   {
     "label": "Cloud & DevOps",
     "tools": [
-      {
-        "name": "AWS",
-        "logo": "/logos/amazonwebservices-original-wordmark.svg"
-      },
-      {
-        "name": "Docker",
-        "logo": "/logos/docker-original.svg"
-      },
-      {
-        "name": "Git",
-        "logo": "/logos/git-original.svg"
-      },
-      {
-        "name": "GitHub Actions",
-        "logo": "/logos/github-original.svg"
-      },
-      {
-        "name": "S3",
-        "logo": "/logos/amazonwebservices-original-wordmark.svg"
-      }
-    ]
-  },
-  {
-    "label": "AI/ML",
-    "tools": [
-      {
-        "name": "LLM APIs"
-      },
-      {
-        "name": "LangGraph"
-      },
-      {
-        "name": "RAG pipelines"
-      },
-      {
-        "name": "Vector embeddings"
-      },
-      {
-        "name": "Semantic search"
-      }
-    ]
-  },
-  {
-    "label": "Testing",
-    "tools": [
-      {
-        "name": "Jest",
-        "logo": "/logos/jest-plain.svg"
-      },
-      {
-        "name": "Vitest",
-        "logo": "/logos/Vitest.svg"
-      }
+      { "name": "AWS", "logo": "/logos/amazonwebservices-original-wordmark.svg" },
+      { "name": "Google Cloud Platform" },
+      { "name": "Docker", "logo": "/logos/docker-original.svg" },
+      { "name": "Git", "logo": "/logos/git-original.svg" }
     ]
   }
 ]

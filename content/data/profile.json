@@ -1,36 +1,36 @@
 {
   "profile": {
-    "name": "Aahil Khan",
-    "initials": "AK",
-    "resumePdf": "/aahil-khan-resume.pdf",
+    "name": "Mohamed Rayan",
+    "initials": "SP",
+    "resumePdf": "/Mohamed_Rayan_S_P_FlowCV_Resume_2026-10-24.pdf",
     "portrait": "/pfp/main.jpeg",
     "portraitHidden": "/pfp/0ef906d3e7544052.jpeg",
     "role": {
-      "prefix": "Full stack engineer,",
+      "prefix": "AI engineer,",
       "emphasis": "AI retrieval & agents"
     },
-    "location": "Bareilly, India",
+    "location": "Chennai, India",
     "availability": "",
-    "email": "aahilminookhan@gmail.com",
+    "email": "spmohamedrayanworks@gmail.com",
     "intro": "I build AI stuff and anything else I find interesting, RAG pipelines, multi agent systems, Full Stack apps, and generally anything that looks shiny at 2AM in the morning :)",
     "notes": [
-      "Final year Computer Engineering at Thapar, with an IIT Madras Diploma in Programming under my belt, because apparently one courseload wasn't enough",
-      "Right now I split my time between two internships: building production AI systems at Oddmind Innovations, and working on accent invariant speech research with Samsung PRISM",
-      "I like building things, breaking them, and occasionally wondering why I decided to build them in the first place"
+      "AI Engineer specializing in production-grade enterprise solutions for the retail and supply chain sectors across GCP and AWS.",
+      "I build multi-agent systems, advanced RAG pipelines, and cloud-native automation designed for system reliability and real-world scale.",
+      "I am a strong advocate for the judicious use of AI: deploying agentic workflows and LLM pipelines strictly where they solve core operational bottlenecks, cut friction, and drive measurable business impact—rather than chasing tech hype."
     ],
     "deskWelcome": "Almost forgot, Welcome to the site! Leave a note if you like it :D",
     "links": [
       {
         "label": "GitHub",
-        "href": "https://github.com/aahil-khan"
+        "href": "https://github.com/rayanova-x"
       },
       {
         "label": "LinkedIn",
-        "href": "https://www.linkedin.com/in/aahil-khan77/"
+        "href": "https://www.linkedin.com/in/mohamedrayansp"
       },
       {
         "label": "Email",
-        "href": "mailto:aahilminookhan@gmail.com"
+        "href": "mailto:spmohamedrayanworks@gmail.com"
       }
     ]
   },

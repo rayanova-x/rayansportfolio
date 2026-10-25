@@ -81,11 +81,11 @@ export const dockLayout: readonly DockNode[] = [
 export const externalApps: readonly AppDef[] = [
   {
     id: 'github', label: 'GitHub', icon: 'github', colour: '#E8E6DE', tint: '#F4F2EA',
-    width: 0, rotate: 0, href: 'https://github.com/aahil-khan',
+    width: 0, rotate: 0, href: 'https://github.com/rayanova-x',
   },
   {
     id: 'linkedin', label: 'LinkedIn', icon: 'linkedin', colour: '#E8E6DE', tint: '#F4F2EA',
-    width: 0, rotate: 0, href: 'https://www.linkedin.com/in/aahil-khan77/',
+    width: 0, rotate: 0, href: 'https://www.linkedin.com/in/mohamedrayansp',
   },
 ]
 

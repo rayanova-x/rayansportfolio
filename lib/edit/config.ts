@@ -18,7 +18,7 @@ export interface EditConfig {
   origin: string
 }
 
-export const REPO = { owner: 'aahil-khan', repo: 'portfolio-canvas', branch: 'main' } as const
+export const REPO = { owner: 'rayanova-x', repo: 'rayansportfolio', branch: 'main' } as const
 
 /** A session lasts at most this long, whatever GitHub says the token is good for. */
 export const SESSION_MS = 8 * 3600 * 1000

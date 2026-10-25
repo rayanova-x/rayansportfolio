@@ -1,19 +1,19 @@
 {
-  "updated": "2026-08",
+  "updated": "2026-10",
   "lede": "A snapshot, short and sweet.",
   "items": [
     {
       "label": "Building",
-      "what": "Holt, started as a simple CLI, evolved into a TUI, and is now being shipped as a full web dashboard."
+      "what": "Production multi-agent systems and RAG workflows for enterprise retail at TCS."
     },
     {
-      "label": "Also Looking into",
-      "what": "Gnome extensions, love 'em to death, going to publish some of my own too"
+      "label": "Learning",
+      "what": "Deeper agent evaluation and observability with LangSmith and OpenTelemetry."
     },
     {
-      "label": "Thinking about",
-      "what": "Increasing OSS contributions, boy is it getting competetive"
+      "label": "Certified",
+      "what": "Three Anthropic Claude certifications earned in 2026."
     }
   ],
-  "foot": "Borrowed from Derek Sivers, who has been telling people to keep one of these for years."
+  "foot": ""
 }

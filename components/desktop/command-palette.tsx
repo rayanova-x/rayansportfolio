@@ -246,8 +246,8 @@ export function CommandPalette({
      */
     out.push(
       { id: 'ext:site', group: 'Elsewhere', chip: 'Elsewhere', label: 'Open the site', hint: '/', keywords: 'cv resume print pdf page scrolling', run: () => router.push('/') },
-      { id: 'ext:gh', group: 'Elsewhere', chip: 'Elsewhere', label: 'GitHub', keywords: 'code repo profile', run: () => window.open('https://github.com/aahil-khan', '_blank', 'noopener,noreferrer') },
-      { id: 'ext:li', group: 'Elsewhere', chip: 'Elsewhere', label: 'LinkedIn', keywords: 'profile work', run: () => window.open('https://www.linkedin.com/in/aahil-khan77/', '_blank', 'noopener,noreferrer') },
+      { id: 'ext:gh', group: 'Elsewhere', chip: 'Elsewhere', label: 'GitHub', keywords: 'code repo profile', run: () => window.open('https://github.com/rayanova-x', '_blank', 'noopener,noreferrer') },
+      { id: 'ext:li', group: 'Elsewhere', chip: 'Elsewhere', label: 'LinkedIn', keywords: 'profile work', run: () => window.open('https://www.linkedin.com/in/mohamedrayansp', '_blank', 'noopener,noreferrer') },
     )
 
     return out
