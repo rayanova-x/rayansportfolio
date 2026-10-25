@@ -1,27 +1,20 @@
 # portfolio-canvas
 
-Aahil Khan's portfolio: a scrolling front page and an infinite-canvas desktop.
-Live at [aahil-khan.xyz](https://aahil-khan.xyz).
+Mohamed Rayan S P's portfolio. Built with Next.js and hosted on Vercel.
+Live at [rayansportfolio-ten.vercel.app](https://rayansportfolio-ten.vercel.app).
 
-## Using this code
+## Making changes
 
-The code is [MIT licensed](LICENSE). You're welcome to learn from it, borrow pieces, or fork it.
+- **Content** (experience, projects, skills, certifications, bio): edit the JSON files in `content/data/` or use **`/edit`** on the live site (requires GitHub auth). Each change commits automatically and deploys in ~2–5 minutes.
+- **Code** (components, styles, etc.): edit locally, test with `npm run dev`, then push to `main`. Vercel auto-deploys on push.
 
-If you reskin or build on the site, **please credit it**: a line in your footer or README such as
-"Design inspired by [aahil-khan.xyz](https://aahil-khan.xyz)" is all I ask. Please don't lift the
-layout, hero and README wholesale and ship it as your own. That's the one thing I'd rather you
-didn't do, and it's what the credit is for.
+## Getting started
 
-What is not part of the licence: my name, photos, résumé, project write-ups and all the copy in
-`content/data/`. Those are mine. Swap in your own.
+```bash
+npm run dev
+```
 
-## Updating the site
-
-- **Content** (projects, jobs, awards, bio, archive, now, writing, tools, front-page copy,
-  screenshots, résumé): open **`/edit`** on the live site and sign in with GitHub. Each save is one
-  commit to `main` and is live in about three minutes. From a Claude session, ask for the change —
-  the `update-content` skill edits the same files the same way.
-- **Code:** push to `main`. The server deploys `main` on its own — see `deploy/README.md`.
+Open [http://localhost:3000](http://localhost:3000) to see your changes locally.
 
 ## Getting Started
 
