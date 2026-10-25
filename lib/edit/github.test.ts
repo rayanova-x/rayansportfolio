@@ -7,7 +7,7 @@ import { GitConflict, githubGit } from './github.ts'
 function fakeFetch(refStatus: number, refBody: string, seen: string[] = []): typeof fetch {
   return (async (input: string | URL | Request, init?: RequestInit) => {
     const url = String(input)
-    seen.push(`${init?.method ?? 'GET'} ${url.replace('https://api.github.com/repos/aahil-khan/portfolio-canvas', '')}`)
+    seen.push(`${init?.method ?? 'GET'} ${url.replace('https://api.github.com/repos/rayanova-x/rayansportfolio', '')}`)
     if (url.endsWith('/git/blobs')) return Response.json({ sha: 'blob1' })
     if (url.endsWith('/git/trees')) return Response.json({ sha: 'tree1' })
     if (url.endsWith('/git/commits')) return Response.json({ sha: 'commit1' })

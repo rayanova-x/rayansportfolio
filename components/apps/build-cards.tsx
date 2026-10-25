@@ -499,11 +499,20 @@ export async function buildCards(): Promise<CardDef[]> {
           {j.meta ? <p className="detail-meta">{j.meta}</p> : null}
           <p className="lede">{rich(j.lede)}</p>
           <Shots images={j.images} alt={`${j.company} screenshot`} />
-          <ul className="bullets">
-            {j.highlights.map((h, i) => (
-              <li key={i}>{rich(h)}</li>
-            ))}
-          </ul>
+          {j.work?.map((w) => (
+            <section className="work-block" key={w.title}>
+              <h4>{w.title}</h4>
+              <p className="work-tech">{w.tech.split('|').map((t) => t.trim()).join(' · ')}</p>
+              <p>{rich(w.summary)}</p>
+            </section>
+          ))}
+          {j.highlights?.length ? (
+            <ul className="bullets">
+              {j.highlights.map((h, i) => (
+                <li key={i}>{rich(h)}</li>
+              ))}
+            </ul>
+          ) : null}
           <StackChips names={j.stack} />
         </>
       ),

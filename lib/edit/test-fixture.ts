@@ -49,7 +49,7 @@ export function fixture(): ContentSet {
         },
       ],
       education: [{ institution: 'i', degree: 'd', detail: 'x' }],
-      awards: [{ title: 'Winner', event: 'E' }],
+      certifications: [{ title: 'Certified', issuer: 'I' }],
     },
     archive: [{ id: 'a1', kind: 'built', title: 'T', when: 'now' }],
     now: { updated: '2026-08', lede: 'l', items: [{ label: 'L', what: 'w' }], foot: '' },

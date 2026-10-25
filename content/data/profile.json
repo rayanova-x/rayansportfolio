@@ -1,10 +1,10 @@
 {
   "profile": {
-    "name": "Mohamed Rayan",
+    "name": "Mohamed Rayan S P",
     "initials": "SP",
     "resumePdf": "/Mohamed_Rayan_S_P_FlowCV_Resume_2026-10-24.pdf",
-    "portrait": "/pfp/main.jpeg",
-    "portraitHidden": "/pfp/0ef906d3e7544052.jpeg",
+    "portrait": "/pfp/rayan_photo_copy1.jpg",
+    "portraitHidden": "/pfp/rayan_photo_copy1.jpg",
     "role": {
       "prefix": "AI engineer,",
       "emphasis": "AI retrieval & agents"
@@ -12,12 +12,14 @@
     "location": "Chennai, India",
     "availability": "",
     "email": "spmohamedrayanworks@gmail.com",
-    "intro": "I build AI stuff and anything else I find interesting, RAG pipelines, multi agent systems, Full Stack apps, and generally anything that looks shiny at 2AM in the morning :)",
+    "intro": "I don't just build systems. I obsess over them until I understand every layer, edge case and architectural trade-off. :)",
     "notes": [
-      "AI Engineer specializing in production-grade enterprise solutions for the retail and supply chain sectors across GCP and AWS.",
-      "I build multi-agent systems, advanced RAG pipelines, and cloud-native automation designed for system reliability and real-world scale.",
-      "I am a strong advocate for the judicious use of AI: deploying agentic workflows and LLM pipelines strictly where they solve core operational bottlenecks, cut friction, and drive measurable business impact—rather than chasing tech hype."
-    ],
+      "My journey into AI Engineering wasn't a neat, linear path.",
+"I immersed myself in Data Science and ML theory, waded through the noise, and spent time dissecting how complex models and pipelines operate behind the scenes.",
+"That perfectionism is what drives me today.",
+"I specialize in building production-grade enterprise solutions for retail and supply chain across AWS and GCP, obsessing over the details in multi-agent systems, advanced RAG, and cloud-native automation until they run with bulletproof reliability.",
+"I believe in high-impact, pragmatic engineering: designing intelligent systems strictly where they eliminate operational bottlenecks and deliver measurable value, built right down to the iron."
+         ],
     "deskWelcome": "Almost forgot, Welcome to the site! Leave a note if you like it :D",
     "links": [
       {

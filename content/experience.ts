@@ -1,4 +1,4 @@
-import type { Education, Job } from './types'
+import type { Certification, Education, Job } from './types'
 import json from './data/experience.json' with { type: 'json' }
 
 /*
@@ -13,7 +13,7 @@ import json from './data/experience.json' with { type: 'json' }
 const data = json as unknown as {
   jobs: Job[]
   education: Education[]
-  awards: { title: string; event: string }[]
+  certifications: Certification[]
 }
 
 /** Roles. Sorted by `year` descending in the Experience card. */
@@ -22,5 +22,5 @@ export const jobs: readonly Job[] = data.jobs
 /** Shown as quieter rows beneath the roles. */
 export const education: readonly Education[] = data.education
 
-/** Standalone awards. Project-specific ones live on the project itself. */
-export const awards: readonly { title: string; event: string }[] = data.awards
+/** Certifications, each with an optional badge image. */
+export const certifications: readonly Certification[] = data.certifications

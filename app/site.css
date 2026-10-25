@@ -22,7 +22,7 @@
    * tuned: at 390px the name must still out-weigh the headline, which runs four lines there.
    * Recorded in design/DIRECTION.md.
    */
-  --fs-mega: clamp(4rem, 15vw, 10.5rem);
+  --fs-mega: clamp(3.5rem, 13vw, 9rem);
   --fs-display: clamp(1.625rem, 4.2vw, 3.75rem);
   --fs-heading: clamp(1.375rem, 2.6vw, 2.25rem);
   /* steps up from the résumé's 1rem — part of the brief is readers who are not squinting */
@@ -620,6 +620,7 @@
   box-sizing: border-box;
   flex: none;
 }
+.site .s-tool img.inv { filter: invert(1); }
 /* no logo, no stand-in — just the name */
 .site .s-tool--text { padding-inline: 0.85rem; color: var(--ink-muted); }
 
@@ -703,6 +704,15 @@
 .site .job h3 { font-size: 1.375rem; letter-spacing: -0.015em; }
 .site .job h3 span { font-weight: 400; color: var(--ink-muted); }
 .site .job__lede { margin-top: 0.6rem; color: var(--ink-muted); max-width: var(--measure); }
+.site .job__work { margin-top: 1.25rem; display: grid; gap: 1.5rem; }
+.site .job__block + .job__block {
+  padding-top: 1.5rem;
+  border-top: 1.5px solid color-mix(in srgb, var(--ink) 14%, transparent);
+}
+.site .job__block h4 { font-size: 1.125rem; font-weight: 700; letter-spacing: -0.01em; }
+.site .job__tech { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.55rem; }
+.site .job__tech .s-chip { margin: 0; }
+.site .job__summary { margin-top: 0.7rem; color: var(--ink-muted); max-width: var(--measure); }
 .site .job__points { margin-top: 1rem; display: grid; gap: 0.6rem; }
 .site .job__points li {
   position: relative;
@@ -846,6 +856,7 @@
 
 /* ---------- credentials ---------- */
 .site .creds { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.25rem; }
+.site .creds--two { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .site .cred {
   border: var(--bw) solid var(--border);
   border-radius: var(--radius-card);
@@ -868,6 +879,8 @@
 }
 .site .cred b { display: block; font-weight: 700; letter-spacing: -0.01em; }
 .site .cred span { display: block; color: var(--ink-subtle); font-size: 0.9375rem; }
+.site .cred__item--badge { display: flex; align-items: center; gap: 0.9rem; }
+.site .cred__badge { width: 64px; height: 64px; flex: none; object-fit: contain; }
 .site .cred a { text-decoration: none; }
 .site .cred a b {
   text-decoration: underline;
@@ -875,7 +888,7 @@
   text-decoration-thickness: 3px;
   text-underline-offset: 3px;
 }
-@media (max-width: 900px) { .site .creds { grid-template-columns: 1fr; } }
+@media (max-width: 900px) { .site .creds, .site .creds--two { grid-template-columns: 1fr; } }
 
 /* ---------- closer ---------- */
 .site .closer {
@@ -1715,3 +1728,7 @@ html:has(.site)::-webkit-scrollbar-thumb:hover {
 @media (prefers-reduced-motion: reduce) {
   .site .job__chev { transition: none; }
 }
+
+/* Hide the two boxes */
+.site .ghost { display: none; }
+.site .door { display: none; }

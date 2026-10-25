@@ -4,18 +4,31 @@
       "slug": "tcs",
       "role": "AI Engineer",
       "company": "Tata Consultancy Services",
-      "period": "08/2024 – Present",
+      "period": "August 2024 – Present",
       "year": 2024,
-      "meta": "Tata Consultancy Services · Chennai, India · 08/2024 – Present",
+      "meta": "Tata Consultancy Services · Chennai, India · August 2024 – Present",
       "lede": "Delivering production-grade enterprise AI solutions across GCP and AWS for supply chain document automation, multi-agent insurance claims, enterprise IT support, and apparel commerce.",
-      "highlights": [
-        "Deployed a serverless GCP-based document processing pipeline to automate vendor packing slip extraction and JDE ERP integration across 20+ suppliers, projecting savings of 2,800-3,700 manual hours per distribution center annually.",
-        "Boosted extraction accuracy from 75% to 95% by transitioning to a generative AI schema framework, achieving 80% end-to-end automation across non-standard supplier templates.",
-        "Architected a LangGraph-based multi-agent insurance claims pipeline with interrupt checkpoints for human review of high-risk claims, backed by deterministic guardrails, PII masking and audit logs.",
-        "Engineered an automated CI test suite and custom evaluation engine combining full branch-coverage graph checks, hand-calibrated LLM-as-a-judge scoring, and trajectory path-conformance checks.",
-        "Developed an enterprise IT ticket triage RAG assistant for support staff, enforcing server-side pre-retrieval access control for internal SOPs and confidence-gated fallback synthesis.",
-        "Designed a hybrid BM25 + dense search and cross-encoder reranking engine, achieving 95% Recall@5 and 0.81 NDCG@5, validated via prompt-injection testing, dual-layer citation checks, and LLM-as-a-judge evals.",
-        "Led a 5-member team, delivering a Bedrock-powered Virtual Try-On feature across 21 apparel categories in a Dynamic Yield environment on AWS, driving shopper engagement with projected 2-5% conversion uplift and 10% return-rate reduction."
+      "work": [
+        {
+          "title": "📦 Streamlining Supply Chain Automation with GenAI",
+          "tech": "GCP | Document Processing | ERP Integration",
+          "summary": "When manual vendor invoice and packing slip processing started creating bottlenecks across 20+ suppliers, I architected a serverless, GCP-native document extraction pipeline tied directly into JDE ERP. By replacing brittle legacy extraction with a flexible generative AI schema framework, extraction accuracy jumped from 75% to 95%, achieving 80% end-to-end automation across unstructured supplier templates and saving 2,800–3,700 hours of manual labor per distribution center annually."
+        },
+        {
+          "title": "🛡️ Architecting Trusted Multi-Agent AI for Insurance",
+          "tech": "LangGraph | Multi-Agent Systems | AI Governance & Evaluation",
+          "summary": "To tackle high-risk insurance claims safely, I designed a multi-agent orchestration framework built on LangGraph. The system uses deterministic guardrails, real-time PII masking, and human-in-the-loop interrupt checkpoints so adjusters can review edge cases before final decisions. To guarantee production reliability, I engineered a custom CI evaluation suite featuring full branch-coverage checks, trajectory tracking, and calibrated LLM-as-a-judge scoring."
+        },
+        {
+          "title": "🔍 Unlocking Enterprise Knowledge with Secure RAG",
+          "tech": "Hybrid Search | Access Control | High-Precision Retrieval",
+          "summary": "To empower IT support teams, I built an enterprise ticket triage assistant capable of retrieving internal SOPs safely and instantly. By combining hybrid search (BM25 + Dense embeddings) with cross-encoder reranking, the engine achieved 95% Recall@5 and 0.81 NDCG@5. Security was built in from day one, featuring strict server-side pre-retrieval access control, dual-layer citation verification, prompt-injection defense, and confidence-gated fallback synthesis."
+        },
+        {
+          "title": "👕 Driving Fashion Engagement with AI Virtual Try-On",
+          "tech": "AWS Bedrock | Team Leadership | Dynamic Yield",
+          "summary": "Leading a team of 5 engineers, I directed the launch of an AWS Bedrock-powered Virtual Try-On experience spanning 21 apparel categories within a Dynamic Yield environment. By transforming how shoppers visualize garments online, the feature was projected to boost conversions by 2–5% and reduce product return rates by up to 10%."
+        }
       ],
       "stack": [
         "Python",
@@ -26,6 +39,39 @@
         "Docker",
         "PyTorch"
       ]
+    },
+    {
+      "slug": "feynn",
+      "role": "Data Science & ML Intern",
+      "company": "Feynn Labs",
+      "period": "March 2024 – May 2024",
+      "year": 2024,
+      "meta": "Feynn Labs · Remote · March 2024 – May 2024",
+      "lede": "Developed end-to-end machine learning and blockchain solutions for maritime analytics, market segmentation, and financial forecasting.",
+      "work": [
+        {
+          "title": "🌊 Maritime Data Analysis & Classification",
+          "tech": "Python | Gradient Boosting | Feature Engineering",
+          "summary": "Engineered a maritime data analysis and tracking solution (SmartSea) leveraging Gradient Boosting to classify ship vessel types using AIS datasets from the Denmark Maritime Authority. Conducted rigorous data preprocessing, EDA, and custom feature engineering—handling missing values, outlier detection using IQR, and building features like vessel dimensions and route calculations. Designed and deployed a private blockchain network using Ganache and Solidity, developing a VesselRegistry smart contract to record immutable ship tracking details securely."
+        },
+        {
+          "title": "🏥 Healthcare Market Analysis & Forecasting",
+          "tech": "Random Forest | ARIMA | Holt-Winters",
+          "summary": "Built and evaluated predictive machine learning models in Python for healthcare market analysis, including medical cost regression models using Random Forest and Polynomial Regression. Implemented time-series forecasting with Holt-Winters and ARIMA to predict market trends and inform strategic decision-making."
+        },
+        {
+          "title": "⚡ EV & eHealth Market Segmentation",
+          "tech": "PCA | K-Means Clustering | Market Research",
+          "summary": "Executed market segmentation analyses for electric vehicle and eHealth industries utilizing large-scale census and survey data. Applied Principal Component Analysis (PCA) and K-Means clustering to extract primary consumer segments and identify market target strategies."
+        }
+      ],
+      "stack": [
+        "Python",
+        "Machine Learning",
+        "Pandas",
+        "Scikit-learn",
+        "Time-Series Analysis"
+      ]
     }
   ],
   "education": [
@@ -33,20 +79,29 @@
       "institution": "Vellore Institute of Technology",
       "degree": "B.Tech in Computer Science and Engineering",
       "detail": "2020 – 2024 | Vellore, India"
+    },
+    {
+      "institution": "Chettinad Vidyashram",
+      "degree": "12th Grade, CBSE",
+      "detail": "2020 | Chennai, India"
     }
+
   ],
-  "awards": [
+  "certifications": [
     {
       "title": "Claude Certified Architect - Professional",
-      "event": "Anthropic (2026)"
+      "issuer": "Anthropic (2026)",
+      "image": "/certifications/claude-certified-architect-professional.png"
     },
     {
       "title": "Claude Certified Architect - Foundations",
-      "event": "Anthropic (2026)"
+      "issuer": "Anthropic (2026)",
+      "image": "/certifications/claude-certified-architect-foundations.png"
     },
     {
       "title": "Claude Certified Developer - Foundations",
-      "event": "Anthropic (2026)"
+      "issuer": "Anthropic (2026)",
+      "image": "/certifications/claude-certified-developer-foundations.png"
     }
   ]
 }

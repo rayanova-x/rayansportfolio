@@ -12,7 +12,7 @@ import { sniff } from './sniff.ts'
  */
 
 export const TRAILER = 'Edited-via: /edit'
-export const UPLOAD_DIRS = ['work', 'archive', 'pfp', 'logos'] as const
+export const UPLOAD_DIRS = ['work', 'archive', 'pfp', 'logos', 'certifications'] as const
 export const MAX_IMAGE = 5 * 1024 * 1024
 export const MAX_PDF = 10 * 1024 * 1024
 

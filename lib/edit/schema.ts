@@ -27,7 +27,7 @@ export type Field =
   | (Base & { kind: 'bool' })
   | (Base & { kind: 'enum'; options: readonly string[] })
   | (Base & { kind: 'ref'; to: 'tool' })
-  | (Base & { kind: 'file'; accept: 'image' | 'pdf'; dir: 'work' | 'archive' | 'pfp' | 'logos' | '' })
+  | (Base & { kind: 'file'; accept: 'image' | 'pdf'; dir: 'work' | 'archive' | 'pfp' | 'logos' | 'certifications' | '' })
   | (Base & { kind: 'shot'; dir: 'archive' })
   | (Base & { kind: 'list'; of: Field; min?: number; itemLabel?: string; titleKey?: string })
   | (Base & { kind: 'obj'; fields: Record<string, Field> })

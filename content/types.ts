@@ -93,11 +93,28 @@ export interface Job {
   /** Sort key and the year shown in the list. */
   year: number
   lede: string
-  highlights: string[]
+  /** Plain bullets. Optional now that `work` carries the structured write-up. */
+  highlights?: string[]
+  /** Titled blocks: a heading, the tech underneath, then what was done. */
+  work?: WorkBlock[]
   stack: string[]
   /** Screenshots, in order. See `Project.images`. */
   images?: string[]
   meta?: string
+}
+
+export interface WorkBlock {
+  title: string
+  /** Tech line shown under the title, `|`-separated, e.g. 'GCP | Document Processing'. */
+  tech: string
+  summary: string
+}
+
+export interface Certification {
+  title: string
+  issuer: string
+  /** Badge image under `public/certifications/`. */
+  image?: string
 }
 
 export interface Education {

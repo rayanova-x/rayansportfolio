@@ -574,6 +574,17 @@ button.item:focus-visible .ttl::after {
   color: var(--ink-subtle);
   margin: 0 0 10px;
 }
+.work-block { margin: 0 0 16px; }
+.work-block h4 { margin: 0 0 3px; font-size: 1rem; font-weight: 700; color: var(--ink); }
+.work-block .work-tech {
+  margin: 0 0 6px;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: var(--ink-subtle);
+}
+.work-block p:last-child { margin: 0; color: var(--ink-muted); line-height: 1.55; }
 .bullets {
   margin: 0 0 14px;
   padding: 0;

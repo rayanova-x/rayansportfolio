@@ -2,7 +2,7 @@ import { Fragment } from 'react'
 import Link from 'next/link'
 
 import {
-  awards,
+  certifications,
   education,
   headlineStats,
   jobs,
@@ -59,6 +59,12 @@ export function Bar() {
   )
 }
 
+/* first word on its own line, the rest together: "Mohamed" / "Rayan S P", not one word per line */
+function nameLines(name: string): string[] {
+  const [first, ...rest] = name.split(' ')
+  return rest.length ? [first, rest.join(' ')] : [first]
+}
+
 export function Hero() {
   const { lead, emphasis, tail } = site.headline
   /* split here rather than in the client: the spans must exist in the server HTML, or the
@@ -98,7 +104,7 @@ export function Hero() {
         </p>
 
         <h1 className="name">
-          {profile.name.split(' ').map((line) => (
+          {nameLines(profile.name).map((line) => (
             <span className="name__line" key={line}>
               <span>{line}</span>
             </span>
@@ -195,8 +201,10 @@ export function Skills() {
                       --ink band. One rule beats a per-logo invert flag.
                       A tool with no logo gets its name alone — no stand-in.
                     */}
-                    {/* eslint-disable-next-line @next/next/no-img-element -- tiny fixed-size logo */}
-                    {tool.logo ? <img src={tool.logo} alt="" width={30} height={30} /> : null}
+                    {tool.logo ? (
+                      /* eslint-disable-next-line @next/next/no-img-element -- tiny fixed-size logo */
+                      <img className={tool.invert ? 'inv' : undefined} src={tool.logo} alt="" width={30} height={30} />
+                    ) : null}
                     {tool.name}
                   </span>
                 ))}
@@ -254,6 +262,7 @@ export function Experience() {
               company={job.company}
               lede={job.lede}
               highlights={job.highlights}
+              work={job.work}
               stack={job.stack}
             />
           ))}
@@ -333,7 +342,7 @@ export function Credentials() {
           <p className="eyebrow">{site.credentials.eyebrow}</p>
           <h2>{site.credentials.title}</h2>
         </div>
-        <div className="creds">
+        <div className={posts.length ? 'creds' : 'creds creds--two'}>
           <div className="cred reveal">
             <h3>{site.credentials.education}</h3>
             <ul>
@@ -348,34 +357,40 @@ export function Credentials() {
           </div>
 
           <div className="cred reveal">
-            <h3>{site.credentials.awards}</h3>
+            <h3>{site.credentials.certifications}</h3>
             <ul>
-              {awards.map((a) => (
-                <li key={a.event}>
-                  <b>{a.title}</b>
-                  <span>{a.event}</span>
+              {certifications.map((c) => (
+                <li className={c.image ? 'cred__item--badge' : undefined} key={c.title}>
+                  {/* eslint-disable-next-line @next/next/no-img-element -- fixed-size badge */}
+                  {c.image ? <img className="cred__badge" src={c.image} alt="" width={64} height={64} /> : null}
+                  <div>
+                    <b>{c.title}</b>
+                    <span>{c.issuer}</span>
+                  </div>
                 </li>
               ))}
             </ul>
           </div>
 
-          <div className="cred reveal">
-            <h3>{site.credentials.writing}</h3>
-            <ul>
-              {[...posts]
-                .sort((a, b) => b.year - a.year)
-                .map((p) => (
-                  <li key={p.slug}>
-                    <a href={p.href} target="_blank" rel="noopener noreferrer">
-                      <b>{p.title}</b>
-                      <span>
-                        {p.blurb} · {p.readingTime} · {p.year}
-                      </span>
-                    </a>
-                  </li>
-                ))}
-            </ul>
-          </div>
+          {posts.length ? (
+            <div className="cred reveal">
+              <h3>{site.credentials.writing}</h3>
+              <ul>
+                {[...posts]
+                  .sort((a, b) => b.year - a.year)
+                  .map((p) => (
+                    <li key={p.slug}>
+                      <a href={p.href} target="_blank" rel="noopener noreferrer">
+                        <b>{p.title}</b>
+                        <span>
+                          {p.blurb} · {p.readingTime} · {p.year}
+                        </span>
+                      </a>
+                    </li>
+                  ))}
+              </ul>
+            </div>
+          ) : null}
         </div>
       </div>
     </section>
@@ -453,17 +468,6 @@ export function Foot() {
           {profile.name} · {profile.location}
         </span>
         <span>{site.footer.note}</span>
-        <span className="foot__credit">
-          {site.footer.inspiredLead}{' '}
-          <a href={site.footer.inspiredShellUrl} target="_blank" rel="noopener noreferrer">
-            {site.footer.inspiredShell}
-          </a>{' '}
-          {site.footer.inspiredShellFor} {site.footer.inspiredJoin}{' '}
-          <a href={site.footer.inspiredSurfaceUrl} target="_blank" rel="noopener noreferrer">
-            {site.footer.inspiredSurface}
-          </a>{' '}
-          {site.footer.inspiredSurfaceFor}. {site.footer.inspiredRest}
-        </span>
       </div>
       </footer>
     </>

@@ -1,25 +1,9 @@
 [
   {
-    "slug": "supply-chain-document-automation",
-    "name": "Supply Chain Document Processing",
-    "tagline": "Packing-slip extraction straight into the ERP",
-    "year": 2024,
-    "kind": "System",
-    "meta": "TCS · System · GCP, Generative AI",
-    "lede": "A serverless GCP pipeline that reads vendor packing slips and pushes them into JDE ERP, across 20+ suppliers.",
-    "highlights": [
-      "Automates vendor packing slip extraction and **JDE ERP integration** across **20+ suppliers**.",
-      "Projects savings of **2,800–3,700 manual hours** per distribution center annually.",
-      "Lifted extraction accuracy from **75% to 95%** by moving to a generative AI schema framework.",
-      "Reaches **80% end-to-end automation** across non-standard supplier templates."
-    ],
-    "stack": ["Python", "Google Cloud Platform", "LLMs"]
-  },
-  {
     "slug": "insurance-claims-system",
     "name": "Multi-Agent Insurance Claims",
     "tagline": "LangGraph claims pipeline with a human in the loop",
-    "year": 2025,
+    "year": 2026,
     "kind": "System",
     "meta": "TCS · System · LangGraph, Python",
     "lede": "A multi-agent claims workflow that pauses for human review on high-risk claims.",
@@ -28,13 +12,16 @@
       "Backed by **deterministic guardrails**, PII masking and audit logs.",
       "Automated CI test suite plus a custom evaluation engine: full branch-coverage graph checks, hand-calibrated **LLM-as-a-judge** scoring and trajectory path-conformance checks."
     ],
-    "stack": ["LangGraph", "Python", "LangSmith"]
+    "stack": ["LangGraph", "Python", "LangSmith"],
+    "links": [
+      { "label": "GitHub", "href": "https://github.com/rayanova-x" }
+    ]
   },
   {
     "slug": "it-helpdesk-assistant",
     "name": "IT ServiceDesk Assistant",
     "tagline": "Secure RAG for support-ticket triage",
-    "year": 2025,
+    "year": 2026,
     "kind": "System",
     "meta": "TCS · System · RAG, FastAPI",
     "lede": "A ticket-triage assistant for support staff that enforces access control before it retrieves anything.",
@@ -43,21 +30,9 @@
       "Hybrid **BM25 + dense search** with cross-encoder reranking: **95% Recall@5** and **0.81 NDCG@5**.",
       "Validated with prompt-injection testing, dual-layer citation checks and LLM-as-a-judge evals."
     ],
-    "stack": ["Python", "FastAPI", "RAG pipelines", "Vector Databases"]
-  },
-  {
-    "slug": "virtual-tryon",
-    "name": "Virtual Try-On",
-    "tagline": "Bedrock-powered try-on for apparel commerce",
-    "year": 2025,
-    "kind": "Product",
-    "meta": "TCS · Product · AWS Bedrock, Dynamic Yield",
-    "lede": "A virtual try-on feature across 21 apparel categories, shipped inside a Dynamic Yield environment on AWS.",
-    "highlights": [
-      "Led a **5-member team** delivering the feature end to end.",
-      "Covers **21 apparel categories** on AWS Bedrock.",
-      "Projected **2–5% conversion uplift** and **10% return-rate reduction**."
-    ],
-    "stack": ["AWS", "Python"]
+    "stack": ["Python", "FastAPI", "RAG pipelines", "Vector Databases"],
+    "links": [
+      { "label": "GitHub", "href": "https://github.com/rayanova-x" }
+    ]
   }
 ]

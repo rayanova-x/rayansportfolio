@@ -9,7 +9,7 @@
 export * from './types'
 export { profile, headlineStats } from './profile'
 export { projects } from './projects'
-export { jobs, education, awards } from './experience'
+export { jobs, education, certifications } from './experience'
 export { posts } from './writing'
 export { archive, ARCHIVE_KINDS } from './archive'
 export type { ArchiveItem, ArchiveKind, ArchiveShot } from './archive'

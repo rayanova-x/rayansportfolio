@@ -3,6 +3,7 @@
 import { useId, useState } from 'react'
 
 import { site } from '@/content'
+import type { WorkBlock } from '@/content'
 import { rich } from '@/lib/rich'
 
 /**
@@ -29,7 +30,8 @@ export function JobCard({
   role,
   company,
   lede,
-  highlights,
+  highlights = [],
+  work = [],
   stack,
 }: {
   slug: string
@@ -38,7 +40,8 @@ export function JobCard({
   role: string
   company: string
   lede: string
-  highlights: readonly string[]
+  highlights?: readonly string[]
+  work?: readonly WorkBlock[]
   stack: readonly string[]
 }) {
   const [open, setOpen] = useState(false)
@@ -69,11 +72,30 @@ export function JobCard({
 
       <div className="job__body" id={bodyId}>
         <p className="job__lede">{rich(lede)}</p>
-        <ul className="job__points">
-          {highlights.map((h, i) => (
-            <li key={i}>{rich(h)}</li>
-          ))}
-        </ul>
+        {work.length ? (
+          <div className="job__work">
+            {work.map((w) => (
+              <section className="job__block" key={w.title}>
+                <h4>{w.title}</h4>
+                <p className="job__tech">
+                  {w.tech.split('|').map((t) => (
+                    <span className="s-chip" key={t}>
+                      {t.trim()}
+                    </span>
+                  ))}
+                </p>
+                <p className="job__summary">{rich(w.summary)}</p>
+              </section>
+            ))}
+          </div>
+        ) : null}
+        {highlights.length ? (
+          <ul className="job__points">
+            {highlights.map((h, i) => (
+              <li key={i}>{rich(h)}</li>
+            ))}
+          </ul>
+        ) : null}
         <div className="s-chips">
           {stack.map((t) => (
             <span className="s-chip" key={t}>

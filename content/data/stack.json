@@ -2,10 +2,10 @@
   {
     "label": "Generative AI",
     "tools": [
-      { "name": "LLMs" },
+      { "name": "LLMs", "logo": "/logos/claude.svg" },
       { "name": "RAG pipelines" },
       { "name": "Agentic Workflows" },
-      { "name": "MCP" },
+      { "name": "MCP", "logo": "/logos/modelcontextprotocol.svg" },
       { "name": "Prompt Engineering" },
       { "name": "NLP" },
       { "name": "Machine Learning" },
@@ -15,13 +15,13 @@
   {
     "label": "Frameworks & Tools",
     "tools": [
-      { "name": "PyTorch" },
+      { "name": "PyTorch", "logo": "/logos/pytorch-original.svg" },
       { "name": "LangChain", "logo": "/logos/langchain.png" },
-      { "name": "LangGraph" },
+      { "name": "LangGraph", "logo": "/logos/langgraph.svg" },
       { "name": "LangSmith" },
-      { "name": "OpenTelemetry" },
+      { "name": "OpenTelemetry", "logo": "/logos/opentelemetry.svg" },
       { "name": "Copilot Studio" },
-      { "name": "Claude Code" }
+      { "name": "Claude Code", "logo": "/logos/claude.svg" }
     ]
   },
   {
@@ -32,17 +32,20 @@
       { "name": "Flask", "logo": "/logos/flask-original.svg" },
       { "name": "REST APIs", "logo": "/logos/rest.png" },
       { "name": "SQL" },
-      { "name": "MongoDB" },
+      { "name": "MongoDB", "logo": "/logos/mongodb-original.svg" },
       { "name": "FAISS" },
       { "name": "ChromaDB" },
-      { "name": "Qdrant", "logo": "/logos/qdrant.png" }
+      { "name": "Qdrant" },
+      { "name": "Pandas" },
+      { "name": "Scikit-learn" },
+      { "name": "Time-Series Analysis" }
     ]
   },
   {
     "label": "Cloud & DevOps",
     "tools": [
       { "name": "AWS", "logo": "/logos/amazonwebservices-original-wordmark.svg" },
-      { "name": "Google Cloud Platform" },
+      { "name": "Google Cloud Platform", "logo": "/logos/googlecloud-original.svg" },
       { "name": "Docker", "logo": "/logos/docker-original.svg" },
       { "name": "Git", "logo": "/logos/git-original.svg" }
     ]

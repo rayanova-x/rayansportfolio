@@ -1,6 +1,6 @@
 import type { Profile, Stat } from './types'
 import json from './data/profile.json' with { type: 'json' }
-import { awards } from './experience.ts'
+import { certifications } from './experience.ts'
 
 /*
  * The data lives in `content/data/profile.json` — edit it at /edit, or by hand. Field help is in
@@ -20,10 +20,10 @@ export const profile: Profile = data.profile
 
 /**
  * Numbers computed from the content rather than typed, so they cannot fall out of step with it.
- * A stat in the JSON with `"derived": "wins"` becomes the number of awards.
+ * A stat in the JSON with `"derived": "wins"` becomes the number of certifications.
  */
 const DERIVED: Record<string, () => string> = {
-  wins: () => String(awards.length),
+  wins: () => String(certifications.length),
 }
 
 /**

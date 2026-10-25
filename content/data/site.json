@@ -63,16 +63,16 @@
   },
   "work": {
     "eyebrow": "Selected work",
-    "title": "Four things worth opening",
+    "title": "Two things worth opening",
     "lede": "Each of these has a full write-up — highlights, stack, screenshots and links.",
     "readMore": "Read the write-up",
     "shotPending": "No screenshot yet"
   },
   "credentials": {
     "eyebrow": "The rest of it",
-    "title": "Education, awards, writing",
+    "title": "Education, certifications, writing",
     "education": "Education",
-    "awards": "Awards",
+    "certifications": "Certifications",
     "writing": "Writing"
   },
   "closer": {
@@ -90,16 +90,7 @@
     "note": "Only Desktops supported. This place has a lot going on."
   },
   "footer": {
-    "note": "Thanks for scrolling all the way down :)",
-    "inspiredLead": "Inspired by",
-    "inspiredShell": "yevtam.com",
-    "inspiredShellUrl": "https://yevtam.com",
-    "inspiredShellFor": "(dock, cursor)",
-    "inspiredJoin": "and",
-    "inspiredSurface": "ajvadlaseen.com",
-    "inspiredSurfaceUrl": "https://ajvadlaseen.com",
-    "inspiredSurfaceFor": "(type, borders, shadows)",
-    "inspiredRest": "Everything else is mine."
+    "note": "Thanks for scrolling all the way down :)"
   },
   "desk": {
     "exit": "The site",
