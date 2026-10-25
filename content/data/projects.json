@@ -32,6 +32,7 @@
     ],
     "stack": ["Python", "FastAPI", "RAG pipelines", "Vector Databases"],
     "links": [
+      { "label": "Demo", "href": "https://it-servicedesk-assistant.onrender.com/" },
       { "label": "GitHub", "href": "https://github.com/rayanova-x" }
     ]
   }
