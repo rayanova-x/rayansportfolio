@@ -20,17 +20,27 @@
   {
     "slug": "it-helpdesk-assistant",
     "name": "IT ServiceDesk Assistant",
-    "tagline": "Secure RAG for support-ticket triage",
+    "tagline": "RAG-based SOP search for IT support staff",
     "year": 2026,
     "kind": "System",
     "meta": "TCS · System · RAG, FastAPI",
-    "lede": "A ticket-triage assistant for support staff that enforces access control before it retrieves anything.",
+    "lede": "Stop hunting through the knowledge base. This AI assistant finds the right SOP for each ticket, so IT staff can solve problems in record time.",
+    "description": "IT staff spend a large share of each ticket searching the internal knowledge base instead of fixing the issue. The knowledge base contains near-duplicate and outdated articles that look correct. Choosing the wrong one leads to a slower fix or one that breaks something else.",
     "highlights": [
-      "Server-side **pre-retrieval access control** for internal SOPs, with confidence-gated fallback synthesis.",
-      "Hybrid **BM25 + dense search** with cross-encoder reranking: **95% Recall@5** and **0.81 NDCG@5**.",
-      "Validated with prompt-injection testing, dual-layer citation checks and LLM-as-a-judge evals."
+      "**Ticket Understanding:** Reads a pasted ticket and identifies its issue category and error codes.",
+      "**Hybrid Retrieval:** Combines keyword and dense search to find the right SOP.",
+      "**Cited Answers:** Every answer links to its source SOP and last-updated date.",
+      "**Conflict-aware Results:** Flags outdated and current SOPs on the same topic.",
+      "**Role-Based Access:** Shows each staff member only the SOPs their team can see.",
+      "**Evaluation Harness:** Measures evals against a labeled test set on every run."
     ],
     "stack": ["Python", "FastAPI", "RAG pipelines", "Vector Databases"],
+    "images": [
+      "/work/ithelpdeskassistant_outsidepic.png",
+      "/work/ithelpdesk_innerpage1.png",
+      "/work/ithelpdesk_innerpage2.png",
+      "/work/ithelpdesk_innerpage3.png"
+    ],
     "links": [
       { "label": "Demo", "href": "https://it-servicedesk-assistant.onrender.com/" },
       { "label": "GitHub", "href": "https://github.com/rayanova-x/IT_ServiceDesk_Assistant" }

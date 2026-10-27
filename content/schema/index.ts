@@ -135,6 +135,7 @@ const projects: Field = {
       award: { kind: 'str', label: 'Award', optional: true, help: 'A badge at the top of the detail card.' },
       meta: { kind: 'str', label: 'Meta line', optional: true, help: 'Small grey line at the top of the detail card.' },
       lede: { kind: 'rich', label: 'Lede', help: 'Opening sentence of the detail card.' },
+      description: { kind: 'rich', label: 'Description', optional: true, help: 'Longer description shown only on the detail page. Overrides Lede there.' },
       highlights,
       stack,
       images: images('work'),

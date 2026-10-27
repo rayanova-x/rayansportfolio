@@ -66,6 +66,8 @@ export interface Project {
   tag?: string
   /** Opening line of the detail card. Keep it to one sentence. */
   lede: string
+  /** Longer description shown only on the detail page. Overrides `lede` there if set. */
+  description?: string
   /** Detail card bullets. `**bold**` is supported. */
   highlights: string[]
   /** Tool names — must match a name in `stack.ts`, which `npm run check` enforces. */

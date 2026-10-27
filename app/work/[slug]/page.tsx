@@ -94,7 +94,7 @@ export default async function ProjectPage({ params }: { params: Promise<{ slug: 
         <h1>{project.name}</h1>
         <p className="doc__tag">{project.tagline}</p>
         {project.award ? <p className="case__award">🏆 {project.award}</p> : null}
-        <p className="doc__lede">{project.lede}</p>
+        <p className="doc__lede">{project.description || project.lede}</p>
 
         {project.images?.length ? (
           <Shots images={project.images} alt={`${project.name} screenshot`} />

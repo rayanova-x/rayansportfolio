@@ -709,7 +709,23 @@
   padding-top: 1.5rem;
   border-top: 1.5px solid color-mix(in srgb, var(--ink) 14%, transparent);
 }
-.site .job__block h4 { font-size: 1.125rem; font-weight: 700; letter-spacing: -0.01em; }
+.site .job__block h4 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  letter-spacing: -0.01em;
+  position: relative;
+  padding-left: 1.2rem;
+}
+.site .job__block h4::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0.5em;
+  width: 8px;
+  height: 8px;
+  background: var(--accent);
+  border: 1.5px solid var(--border);
+}
 .site .job__tech { display: flex; flex-wrap: wrap; gap: 0.4rem; margin-top: 0.55rem; }
 .site .job__tech .s-chip { margin: 0; }
 .site .job__summary { margin-top: 0.7rem; color: var(--ink-muted); max-width: var(--measure); }
