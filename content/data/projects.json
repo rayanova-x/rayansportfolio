@@ -7,7 +7,7 @@
     "kind": "System",
     "meta": "TCS · System · LangGraph, Python",
     "lede": "Claims shouldn't wait on a desk. This system runs them through AI agents that assess damage and verify coverage in parallel, pulling in a human only when it truly matters.",
-    "description": "Most claims adjuster time goes to repetitive checks: does the damage match the story, is the policy active, does the payout math hold up.\n\nThat's what slows claims down, not the hard decisions, those often don't get flagged until a claim has already sat in the queue. ClaimFlow runs the repetitive checks in parallel the moment a claim arrives, and only pulls in a human when something actually needs judgment, high value, low confidence, a flagged inconsistency.",
+    "description": "Most claims adjuster time goes to repetitive checks: does the damage match the story, is the policy active, does the payout math hold up?\n\nThat's what slows claims down, not the hard decisions, those often don't get flagged until a claim has already sat in the queue. ClaimFlow runs the repetitive checks in parallel the moment a claim arrives, and only pulls in a human when something actually needs judgment, high value, low confidence, a flagged inconsistency.",
     "highlights": [
       "**Multi-Agent Processing:** Damage, coverage, and settlement are assessed by specialized agents running in parallel.",
       "**Consistency Checking:** Flags and resolves conflicts between agents before a decision is made.",
