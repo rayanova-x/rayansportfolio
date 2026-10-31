@@ -38,7 +38,9 @@
       { "name": "Qdrant" },
       { "name": "Pandas" },
       { "name": "Scikit-learn" },
-      { "name": "Time-Series Analysis" }
+      { "name": "Time-Series Analysis" },
+      { "name": "Postgres" },
+      { "name": "Docling" }
     ]
   },
   {

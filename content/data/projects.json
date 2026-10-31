@@ -7,15 +7,24 @@
     "kind": "System",
     "meta": "TCS · System · LangGraph, Python",
     "lede": "Claims shouldn't wait on a desk. This system runs them through AI agents that assess damage and verify coverage in parallel, pulling in a human only when it truly matters.",
-    "description": "Most claims adjuster time goes to repetitive checks: does the damage match the story, is the policy active, does the payout math hold up. That's what slows claims down, not the hard decisions, those often don't get flagged until a claim has already sat in the queue.\n\nClaimFlow runs the repetitive checks in parallel the moment a claim arrives, and only pulls in a human when something actually needs judgment, high value, low confidence, a flagged inconsistency.",
+    "description": "Most claims adjuster time goes to repetitive checks: does the damage match the story, is the policy active, does the payout math hold up.\n\nThat's what slows claims down, not the hard decisions, those often don't get flagged until a claim has already sat in the queue. ClaimFlow runs the repetitive checks in parallel the moment a claim arrives, and only pulls in a human when something actually needs judgment, high value, low confidence, a flagged inconsistency.",
     "highlights": [
-      "**LangGraph** multi-agent pipeline with interrupt checkpoints for human review of high-risk claims.",
-      "Backed by **deterministic guardrails**, PII masking and audit logs.",
-      "Automated CI test suite plus a custom evaluation engine: full branch-coverage graph checks, hand-calibrated **LLM-as-a-judge** scoring and trajectory path-conformance checks."
+      "**Multi-Agent Processing:** Damage, coverage, and settlement are assessed by specialized agents running in parallel.",
+      "**Consistency Checking:** Flags and resolves conflicts between agents before a decision is made.",
+      "**Document Extraction:** Pulls structured data from uploaded reports and repair estimates automatically.",
+      "**Human-in-the-Loop Routing:** Pauses only the claims that need judgment, high value, low confidence, or flagged risk.",
+      "**Guardrailed Execution:** Every agent call runs under token, cost, and time budgets.",
+      "**Durable Workflows:** A paused claim survives a restart and resumes exactly where it left off.",
+      "**Evaluation Harness:** Scores each pipeline run against a golden test set and flags regressions across model swaps."
     ],
-    "stack": ["LangGraph", "Python", "LangSmith"],
+    "stack": ["LangGraph", "Python", "Postgres","FastAPI","Docling"],
+    "images": [
+      "/work/insurance_outpage.png",
+      "/work/insurance_inpage1.png",
+      "/work/insurance_inpage2.png"
+    ],
     "links": [
-      { "label": "GitHub", "href": "https://github.com/rayanova-x" }
+      { "label": "GitHub", "href": "https://github.com/rayanova-x/multiagent_insurance_claims_system" }
     ]
   },
   {
