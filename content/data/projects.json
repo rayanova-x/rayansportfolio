@@ -24,6 +24,7 @@
       "/work/insurance_inpage2.png"
     ],
     "links": [
+      { "label": "Demo", "href": "https://multiagent-insurance-claims-system.vercel.app" },
       { "label": "GitHub", "href": "https://github.com/rayanova-x/multiagent_insurance_claims_system" }
     ]
   },
