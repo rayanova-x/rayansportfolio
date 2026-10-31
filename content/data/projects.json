@@ -1,12 +1,13 @@
 [
   {
     "slug": "insurance-claims-system",
-    "name": "Multi-Agent Insurance Claims",
-    "tagline": "LangGraph claims pipeline with a human in the loop",
+    "name": "ClaimFlow",
+    "tagline": "AI-powered claims pipeline for auto insurance.",
     "year": 2026,
     "kind": "System",
     "meta": "TCS · System · LangGraph, Python",
-    "lede": "A multi-agent claims workflow that pauses for human review on high-risk claims.",
+    "lede": "Claims shouldn't wait on a desk. This system runs them through AI agents that assess damage and verify coverage in parallel, pulling in a human only when it truly matters.",
+    "description": "Most claims adjuster time goes to repetitive checks: does the damage match the story, is the policy active, does the payout math hold up. That's what slows claims down, not the hard decisions, those often don't get flagged until a claim has already sat in the queue.\n\nClaimFlow runs the repetitive checks in parallel the moment a claim arrives, and only pulls in a human when something actually needs judgment, high value, low confidence, a flagged inconsistency.",
     "highlights": [
       "**LangGraph** multi-agent pipeline with interrupt checkpoints for human review of high-risk claims.",
       "Backed by **deterministic guardrails**, PII masking and audit logs.",
